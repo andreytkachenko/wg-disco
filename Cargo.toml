@@ -1,0 +1,22 @@
+[package]
+name = "wg-disco"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+aes = "0.8.4"
+base64 = "0.22.1"
+bincode = "2.0.1"
+bytes = "1.10.1"
+clap = { version = "4.5.40", features = ["derive", "cargo"] }
+env_logger = "0.11.8"
+futures = "0.3.31"
+hashes = { version = "0.1.9", features = ["std"] }
+irc = "1.1.0"
+log = "0.4.27"
+rand = "0.9.1"
+socket2 = "0.5.10"
+stunclient = "0.4.1"
+thiserror = "2.0.12"
+tokio = { version = "1.45.1", features = ["macros", "net", "rt-multi-thread"] }
+uuid = { version = "1.17.0", features = ["v4"] }
